@@ -1,18 +1,19 @@
 /* 타이틀 */
+.title {
+  margin: 1rem;
+}
 
 /* 메인 */
 .main {
-  margin: 1rem;
+  margin: 3rem;
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
 }
 
-.content {
-}
-
 .img-container {
+  padding: 1rem;
   margin: 1rem;
   width: 26rem;
   height: 26rem;
@@ -24,41 +25,53 @@
 }
 
 .content-name {
+  text-align: center;
   font-size: xx-large;
   font-weight: bolder;
 }
 .content-discription {
+  text-align: center;
   margin-bottom: 1rem;
   font-size: large;
 }
 
-.link {
+.link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.link-img {
-  width: 7rem;
-  height: 7rem;
+.link {
+  width: 6rem;
+  height: 3rem;
+  background-color: black;
+}
+.link-detail {
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  text-decoration-line: none;
 }
 
 /* main component */
 .component {
   width: 28rem;
-  height: 55rem;
+  height: 50rem;
 }
 
 /* 메인-계산기 */
 .calculator {
-  background-color: grey;
+  background-color: rgb(181, 180, 180);
   border-radius: 2rem;
 }
 
 /* 메인-가위바위보 */
 .r-s-p {
-  background-color: grey;
+  background-color: rgb(181, 180, 180);
   border-radius: 2rem;
 }
 
 /* 메인-업다운게임 */
 .up-down {
-  background-color: grey;
+  background-color: rgb(181, 180, 180);
   border-radius: 2rem;
 }
