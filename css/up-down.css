@@ -1,0 +1,44 @@
+/* 네비게이션 */
+.nav {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.home-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+}
+
+/* 메인 */
+.main {
+  margin: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 출력 */
+.output {
+  width: 24rem;
+  height: 24rem;
+  border-radius: 5%;
+  border: 2px solid rgb(95, 95, 95);
+  background-color: rgb(189, 189, 189);
+}
+
+/* 입력 */
+.input {
+  margin: 5rem;
+}
+.input-content {
+}
