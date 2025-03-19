@@ -12,11 +12,23 @@
   align-items: center;
 }
 
+.content {
+  padding: 0.5rem;
+  width: 24rem;
+  height: 50rem;
+  background-color: rgb(255, 239, 183);
+  border: 3px solid rgb(255, 201, 130);
+  border-radius: 2rem;
+}
+
+/* 이미지 */
 .img-container {
+  background-color: white;
+  border-radius: 2rem;
   padding: 1rem;
   margin: 1rem;
-  width: 26rem;
-  height: 26rem;
+  width: 20rem;
+  height: 20rem;
 }
 .img {
   width: 100%;
@@ -24,17 +36,21 @@
   object-fit: contain;
 }
 
+/* 텍스트 */
 .content-name {
+  padding: 0.5rem;
   text-align: center;
   font-size: xx-large;
   font-weight: bolder;
 }
 .content-discription {
+  padding: 0.5rem;
   text-align: center;
   margin-bottom: 1rem;
   font-size: large;
 }
 
+/* 링크 */
 .link-container {
   display: flex;
   justify-content: center;
@@ -43,35 +59,15 @@
 .link {
   width: 6rem;
   height: 3rem;
-  background-color: black;
+  background-color: rgb(255, 113, 30);
+  border: rgb(255, 113, 30);
+}
+.link:hover {
+  background-color: rgb(246, 73, 43);
 }
 .link-detail {
   font-weight: bold;
   font-size: large;
   color: white;
   text-decoration-line: none;
-}
-
-/* main component */
-.component {
-  width: 28rem;
-  height: 50rem;
-}
-
-/* 메인-계산기 */
-.calculator {
-  background-color: rgb(181, 180, 180);
-  border-radius: 2rem;
-}
-
-/* 메인-가위바위보 */
-.r-s-p {
-  background-color: rgb(181, 180, 180);
-  border-radius: 2rem;
-}
-
-/* 메인-업다운게임 */
-.up-down {
-  background-color: rgb(181, 180, 180);
-  border-radius: 2rem;
 }
