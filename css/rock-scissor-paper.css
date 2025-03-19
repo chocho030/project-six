@@ -1,0 +1,92 @@
+/* 네비게이션 */
+.nav {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.home-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+}
+
+/* 메인 */
+.main {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 컴퓨터 */
+.computer {
+  position: relative;
+}
+
+.computer-img {
+  width: 24rem;
+  height: 24rem;
+  border-radius: 5%;
+  border: 2px solid rgb(95, 95, 95);
+  background-color: rgb(189, 189, 189);
+}
+.computer-text {
+  position: absolute;
+  top: 20.5rem;
+  left: 9rem;
+  width: 6rem;
+  height: 2.5rem;
+  background-color: rgb(255, 255, 255);
+}
+
+/* 선택창 */
+.select {
+  margin-top: 1rem;
+}
+
+.select-button {
+  margin: 2rem;
+  width: 13rem;
+  height: 16rem;
+  background-color: white;
+  border: none;
+}
+
+.select-button-img-container {
+  padding: 1rem;
+  border-radius: 5%;
+  width: 12rem;
+  height: 12rem;
+  border: 3px solid rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.select-button-img-container:hover {
+  box-shadow: 4px 4px 10px 4px rgb(187, 187, 187);
+  background-color: rgb(224, 224, 224);
+}
+.select-button-img-container:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.select-button-img {
+  width: 100%;
+  height: 100%;
+}
+
+.select-button-text {
+  font-size: large;
+}
