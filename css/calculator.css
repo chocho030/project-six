@@ -1,0 +1,85 @@
+/* 네비게이션 */
+.nav {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.home-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+}
+
+/* 메인 */
+.main {
+  margin: 3rem;
+  gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 40rem;
+  height: 50rem;
+  border-radius: 2rem;
+  background-color: grey;
+}
+
+/* 출력 */
+.output {
+  width: 100%;
+  height: 100%;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  width: 36rem;
+  height: 20rem;
+  border-radius: 2rem;
+  background-color: rgb(255, 255, 255);
+}
+
+/* 입력 */
+.input {
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.input-number {
+}
+.input-number-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-calculation {
+  margin-top: 3rem;
+  width: 3rem;
+}
+
+.button {
+  margin: 1rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: large;
+  border-radius: 2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.button:hover {
+  background-color: rgb(184, 184, 184);
+}
+.button:active {
+  box-shadow: inset 0px 0px 15px 2px rgb(66, 66, 66);
+}
