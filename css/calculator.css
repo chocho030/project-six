@@ -36,8 +36,6 @@
 
 /* 출력 */
 .output {
-  width: 100%;
-  height: 100%;
   margin-left: 2rem;
   margin-top: 2rem;
   width: 36rem;
@@ -46,14 +44,32 @@
   background-color: rgb(255, 255, 255);
 }
 
+#process {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+#mid-result {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(163, 163, 163);
+}
+#result {
+  padding-left: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 /* 입력 */
 .input {
-  margin-top: 2rem;
+  margin-top: 0.3rem;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
 }
+
 .input-number {
 }
 .input-number-part {
@@ -76,10 +92,26 @@
   background-color: rgb(255, 255, 255);
   border: none;
 }
-
 .button:hover {
   background-color: rgb(184, 184, 184);
 }
 .button:active {
+  box-shadow: inset 0px 0px 15px 2px rgb(66, 66, 66);
+}
+
+.reset-button {
+  margin-top: 0.7rem;
+  margin-left: 33rem;
+  width: 3rem;
+  height: 2rem;
+  font-size: large;
+  border-radius: 2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+.reset-button:hover {
+  background-color: rgb(184, 184, 184);
+}
+.reset-button:active {
   box-shadow: inset 0px 0px 15px 2px rgb(66, 66, 66);
 }
