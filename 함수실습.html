@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="num0">0</p>
+    <button onclick="plus()">+</button>
+    <button onclick="minus()">-</button>
+    <button onclick="save()">저장</button>
+
+    <p id="num1"></p>
+
+    <script>
+      function plus() {
+        document.getElementById("num0").innerText++;
+      }
+      function minus() {
+        document.getElementById("num0").innerText--;
+      }
+      function save() {
+        document.getElementById("num1").innerText =
+          document.getElementById("num0").innerText;
+      }
+    </script>
+  </body>
+</html>

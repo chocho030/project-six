@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 id="num1">첫번째 숫자 : </h2>
+    <h2 id="variable2">1</h2>
+
+    <button onclick="func1()">증가</button>
+    <button onclick="func8()">+ 함수</button>
+    <button onclick="func11()">- 함수</button>
+    <button onclick="func9()">num 확인 함수</button>
+    <button onclick="func10()">결과 확인 함수</button>
+        <h2 id="variable1">0</h2>
+    <script>
+      let num1 = "";
+      let operator = 0;
+      function func1() {
+        document.getElementById("variable2").innerText = Number(document.getElementById("variable2").innerText) + 1;
+      }
+    //   더하기
+      function func8() {
+        num1 = document.getElementById("variable2").innerText;
+        document.getElementById("num1").innerText = "첫번째 숫자 : " + num1;
+        operator = 0;
+        document.getElementById("variable2").innerText = '0';
+      }
+      function func9() {
+        alert("넘1 : " + num1);
+      }
+    //   결과
+      function func10() {
+        if(operator==0){
+            document.getElementById("variable1").innerText = 
+            Number(num1) + Number(document.getElementById("variable2").innerText);
+        }
+        else if(operator==1){
+            document.getElementById("variable1").innerText = 
+            Number(num1) - Number(document.getElementById("variable2").innerText);
+        }
+      }
+    //   빼기
+      function func11() {
+        num1 = document.getElementById("variable2").innerText;
+        document.getElementById("num1").innerText = "첫번째 숫자 : " + num1;
+        operator = 1;
+        document.getElementById("variable2").innerText = '0';
+      }
+    </script>
+  </body>
+</html>
