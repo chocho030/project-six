@@ -3,38 +3,8 @@ let num = 0;
 
 // 숫자
 
-function num0() {
-  document.getElementById("result").innerText += 0;
-}
-// 1,2,3
-function num1() {
-  document.getElementById("result").innerText += 1;
-}
-function num2() {
-  document.getElementById("result").innerText += 2;
-}
-function num3() {
-  document.getElementById("result").innerText += 3;
-}
-// 4,5,6
-function num4() {
-  document.getElementById("result").innerText += 4;
-}
-function num5() {
-  document.getElementById("result").innerText += 5;
-}
-function num6() {
-  document.getElementById("result").innerText += 6;
-}
-// 7,8,9
-function num7() {
-  document.getElementById("result").innerText += 7;
-}
-function num8() {
-  document.getElementById("result").innerText += 8;
-}
-function num9() {
-  document.getElementById("result").innerText += 9;
+function number(n) {
+  document.getElementById("result").innerText += n;
 }
 
 // 기호
