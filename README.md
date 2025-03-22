@@ -19,3 +19,21 @@ javascript의 DOM 조작.
 - addEventListener()
 - input과 .value로 데이터 가져오기
 - event 조작
+
+## 개선
+
+- BEFORE
+
+![before-html](readme-img/input-number-before.png)
+![before-js](readme-img/input-number.js-before.png)
+
+기능 구현에만 몰두해서 코드의 가독성을 고려하지 못함.
+
+- AFTER
+
+![after-html](readme-img/input-number-after.png)
+![after-js](readme-img/input-number.js-after.png)
+
+함수를 재활용 가능하게 중복을 제거함.
+
+기존에 **32줄**이었던 코드를 **3줄로 생략**하여 가독성을 높였음.
