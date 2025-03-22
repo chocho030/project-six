@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="result">0</h1>
+    <h1 id="result100">0</h1>
+    <h1 id="floorresult100">0</h1>
+    <h1 id="floorresult100plus1">0</h1>
+    <script>
+      let randomint = 0;
+      randomint = Math.random();
+      document.getElementById("result").innerText = randomint;
+      let randomint100 = 0;
+      randomint100 = Math.random() * 100;
+      document.getElementById("result100").innerText = randomint100;
+      //   0~99
+      let floorresult100 = 0;
+      floorresult100 = Math.random() * 100;
+      floorresult100 = Math.floor(floorresult100);
+      document.getElementById("floorresult100").innerText = floorresult100;
+      // 1~100
+      let floorresult100plus1 = 0;
+      floorresult100plus1 = Math.random() * 100;
+      floorresult100plus1 = Math.floor(floorresult100plus1);
+      floorresult100plus1++;
+      document.getElementById("floorresult100plus1").innerText =
+        floorresult100plus1;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .result {
+        color: aqua;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">테스트 모달</h1>
+
+    <div>
+      <h1 class="result" id="result">본문</h1>
+      <button onclick="red()">open</button>
+    </div>
+
+    <script>
+      function red() {
+        document.getElementById("title").style.color = "blue";
+      }
+    </script>
+  </body>
+</html>

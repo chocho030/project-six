@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .result {
+        color: aqua;
+        z-index: 0;
+      }
+      .modal {
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 999;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="modal" class="modal">
+      <h1 id="title">테스트 모달</h1>
+      <button onclick="document.getElementById('modal').style.display = 'none'">
+        close
+      </button>
+    </div>
+
+    <div>
+      <h1 class="result" id="result">본문</h1>
+      <button onclick="openModal()">open</button>
+    </div>
+
+    <script>
+      console.log(document.getElementById("modal"));
+      console.log(document.getElementById("modal").innerHTML);
+      console.log(document.getElementById("modal").innerText);
+      function openModal() {
+        document.getElementById("modal").style.display = "block";
+        document.getElementById("title").style.color = "red";
+      }
+      function close() {}
+    </script>
+  </body>
+</html>

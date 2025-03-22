@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="input-content" class="input-content" type="number" />
+    <button onclick="test()">test</button>
+    <script>
+      let result = 17;
+      let error = 0;
+      function test() {
+        if (result > document.getElementById("input-content").value) {
+          console.log("결과값보다 작습니다.");
+          error++;
+        } else if (result < document.getElementById("input-content").value) {
+          console.log("결과값보다 큽니다.");
+          error++;
+        } else {
+          console.log("정답입니다. 시도 : " + error);
+        }
+        // console.log(document.getElementById("input-content").value);
+      }
+    </script>
+  </body>
+</html>

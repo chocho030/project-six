@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="result">0</h1>
+    <h1 id="rsp">?</h1>
+    <script>
+      let randomint = 0;
+      randomint = Math.random() * 3;
+      randomint = Math.floor(Math.random() * 3);
+      document.getElementById("result").innerText = randomint;
+
+      if (randomint == 0) {
+        document.getElementById("rsp").innerText = "가위";
+      } else if (randomint == 1) {
+        document.getElementById("rsp").innerText = "바위";
+      } else if (randomint == 2) {
+        document.getElementById("rsp").innerText = "보";
+      }
+
+      // 어떻게 하면 승리, 패배를 판단할 수 있는가?
+      let user = 0;
+
+      // 1. 9개의 if문으로 판단하기
+      // 2. 수식으로 판단하기
+      if (user === randomint) {
+        console.log("무승부");
+      } else if ((user - randomint + 3) % 3 === 1) {
+        console.log("승리");
+      } else {
+        console.log("패배");
+      }
+    </script>
+  </body>
+</html>
