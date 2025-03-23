@@ -18,9 +18,46 @@
 .title {
 }
 
+/* 메뉴 */
+.menu {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.start {
+  width: 2.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(189, 189, 189);
+  display: block;
+}
+.start:hover {
+  background-color: rgb(160, 160, 160);
+}
+.start:active {
+  box-shadow: inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.reset {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 18.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(189, 189, 189);
+}
+.reset:hover {
+  background-color: rgb(160, 160, 160);
+}
+.reset:active {
+  box-shadow: inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
 /* 메인 */
 .main {
-  margin: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,20 +69,48 @@
   position: relative;
 }
 
-.computer-img {
+.computer-img-container {
   width: 24rem;
   height: 24rem;
-  border-radius: 5%;
+  border-radius: 1rem;
   border: 2px solid rgb(95, 95, 95);
   background-color: rgb(189, 189, 189);
 }
-.computer-text {
+#computer-img {
+  width: 16rem;
+  height: 16rem;
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+#computer-text {
   position: absolute;
-  top: 20.5rem;
+  top: 20rem;
   left: 9rem;
   width: 6rem;
   height: 2.5rem;
-  background-color: rgb(255, 255, 255);
+
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.next {
+  position: absolute;
+  top: 22rem;
+  left: 25rem;
+
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(189, 189, 189);
+  display: none;
+}
+.next:hover {
+  background-color: rgb(160, 160, 160);
+}
+.next:active {
+  box-shadow: inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
 /* 선택창 */
@@ -89,4 +154,50 @@
 
 .select-button-text {
   font-size: large;
+}
+
+/* 모달 */
+#modal {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 999;
+
+  display: none;
+}
+
+.modal-content {
+  width: 30rem;
+  height: 24rem;
+  border-radius: 1rem;
+  border: 2px solid rgb(95, 95, 95);
+  background-color: rgb(189, 189, 189);
+}
+#final-result {
+  margin-top: 7rem;
+  margin-left: 5rem;
+  width: 20rem;
+  height: 7rem;
+  text-align: center;
+  font-size: 5rem;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 1.5rem;
+}
+#restart {
+  margin-left: 12rem;
+  font-size: 1.5rem;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(255, 255, 255);
 }

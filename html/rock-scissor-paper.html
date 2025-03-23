@@ -5,6 +5,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="/css/rock-scissor-paper.css" />
+    <script src="/js/rock-scissor-paper.js"></script>
   </head>
   <body>
     <!-- 네비게이션 -->
@@ -16,17 +17,25 @@
       <!-- 페이지 제목 -->
       <div class="title">ROCK SCISSOR PAPER</div>
     </div>
+    <!-- 메뉴 -->
+    <div class="menu">
+      <button class="start" id="start" onclick="start()">start</button>
+      <button class="reset" id="reset" onclick="restart()">↺</button>
+    </div>
     <!-- 메인 -->
     <div class="main">
       <!-- 컴퓨터 -->
       <div class="computer">
-        <div class="computer-img"></div>
-        <div class="computer-text"></div>
+        <div class="computer-img-container">
+          <img id="computer-img" src="/img/go.png" alt="" />
+        </div>
+        <div id="computer-text"></div>
+        <button class="next" id="next" onclick="start()">NEXT</button>
       </div>
       <!-- 선택지 -->
       <div class="select">
         <!-- 가위 -->
-        <button class="select-button">
+        <button onclick="user(0)" class="select-button">
           <div class="select-button-img-container">
             <img
               class="select-button-img"
@@ -37,22 +46,32 @@
           <p class="select-button-text">가위</p>
         </button>
         <!-- 바위 -->
-        <button class="select-button">
+        <button onclick="user(1)" class="select-button">
           <div class="select-button-img-container">
             <img class="select-button-img" src="/img/r-s-p--rock.png" alt="" />
           </div>
           <p class="select-button-text">바위</p>
         </button>
         <!-- 보 -->
-        <button class="select-button">
+        <button onclick="user(2)" class="select-button">
           <div class="select-button-img-container">
             <img class="select-button-img" src="/img/r-s-p--paper.png" alt="" />
           </div>
           <p class="select-button-text">보</p>
         </button>
       </div>
+      <!-- 결과 -->
+      <div>
+        <p id="result-computer">computer : 0 / 3</p>
+        <p id="result-user">user : 0 / 3</p>
+      </div>
+    </div>
+    <!-- 모달 -->
+    <div id="modal">
+      <div class="modal-content">
+        <p id="final-result">결과</p>
+        <button id="restart" onclick="restart()">restart</button>
+      </div>
     </div>
   </body>
 </html>
-
-<!-- 할 것: 이미지 삽입. 디자인적 고민. 폰트 바꾸기 고민 -->
