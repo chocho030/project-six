@@ -4,15 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="/css/rock-scissor-paper.css" />
-    <script src="/js/rock-scissor-paper.js"></script>
+    <link rel="stylesheet" href="../css/rock-scissor-paper.css" />
+    <script src="../js/rock-scissor-paper.js"></script>
   </head>
   <body>
     <!-- 네비게이션 -->
     <div class="nav">
       <!-- 홈 버튼 -->
-      <a class="home" href="/index.html">
-        <img class="home-icon" src="/img/home.png" alt="" />
+      <a class="home" href="../index.html">
+        <img class="home-icon" src="../img/home.png" alt="" />
       </a>
       <!-- 페이지 제목 -->
       <div class="title">ROCK SCISSOR PAPER</div>
@@ -27,7 +27,7 @@
       <!-- 컴퓨터 -->
       <div class="computer">
         <div class="computer-img-container">
-          <img id="computer-img" src="/img/go.png" alt="" />
+          <img id="computer-img" src="../img/go.png" alt="" />
         </div>
         <div id="computer-text"></div>
         <button class="next" id="next" onclick="start()">NEXT</button>
@@ -39,7 +39,7 @@
           <div class="select-button-img-container">
             <img
               class="select-button-img"
-              src="/img/r-s-p--scissor.png"
+              src="../img/r-s-p--scissor.png"
               alt=""
             />
           </div>
@@ -48,14 +48,22 @@
         <!-- 바위 -->
         <button onclick="user(1)" class="select-button">
           <div class="select-button-img-container">
-            <img class="select-button-img" src="/img/r-s-p--rock.png" alt="" />
+            <img
+              class="select-button-img"
+              src="../img/r-s-p--rock.png"
+              alt=""
+            />
           </div>
           <p class="select-button-text">바위</p>
         </button>
         <!-- 보 -->
         <button onclick="user(2)" class="select-button">
           <div class="select-button-img-container">
-            <img class="select-button-img" src="/img/r-s-p--paper.png" alt="" />
+            <img
+              class="select-button-img"
+              src="../img/r-s-p--paper.png"
+              alt=""
+            />
           </div>
           <p class="select-button-text">보</p>
         </button>

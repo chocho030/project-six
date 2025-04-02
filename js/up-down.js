@@ -7,7 +7,7 @@ function start() {
   result = Math.floor(result);
   result++;
   document.getElementById("test").innerText = result;
-  document.getElementById("output-img").src = "/img/question.png";
+  document.getElementById("output-img").src = "../img/question.png";
   document.getElementById("start").style.display = "none";
   document.getElementById("reset").style.display = "block";
   document.getElementById("input-content").style.display = "inline";
@@ -17,17 +17,17 @@ function start() {
 // 입력확인
 function ok() {
   if (result > document.getElementById("input-content").value) {
-    document.getElementById("output-img").src = "/img/up.png";
+    document.getElementById("output-img").src = "../img/up.png";
     document.getElementById("output-text").innerText = "업";
     document.getElementById("input-content").value = " ";
     error++;
   } else if (result < document.getElementById("input-content").value) {
-    document.getElementById("output-img").src = "/img/down.png";
+    document.getElementById("output-img").src = "../img/down.png";
     document.getElementById("output-text").innerText = "다운";
     document.getElementById("input-content").value = " ";
     error++;
   } else if ((result = document.getElementById("input-content").value)) {
-    document.getElementById("output-img").src = "/img/ok.png";
+    document.getElementById("output-img").src = "../img/ok.png";
     document.getElementById("output-text").innerText = "정답";
     document.getElementById("output-try").innerText = "시도 횟수 : " + error;
     document.getElementById("input-content").value = " ";
